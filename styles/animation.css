@@ -1,0 +1,160 @@
+.Page{
+   perspective: 1000px;
+    transform-style: preserve-3d;
+}
+@keyframes main  {
+from{
+    background-color: red;
+}
+    35%{
+        background-color: green;
+        color: skyblue;
+    }
+    70%{
+        background-color: darkblue;
+        color: white;
+    }
+    90%{
+        background-color: chartreuse;
+        color:red;
+    }
+}
+@keyframes photo{
+    from{
+        background-color: red;
+    }
+    35%{
+        background-color: green;
+        color: skyblue;
+    }
+    70%{
+        background-color: darkblue;
+        color: white;
+    }
+    to{
+        background-color: chartreuse;
+        color:red;
+    }
+}
+@keyframes portfolio {
+    from{
+        background-color: red;
+    }
+    20%{
+        background-color: green;
+        color: skyblue;
+    }
+    70%{
+        background-color: darkblue;
+        color: white;
+    }
+    to{
+        background-color: chartreuse;
+        color:red;
+    }
+}
+@keyframes contacts {
+    from{
+        background-color: red;
+    }
+    20%{
+        background-color: green;
+        color: skyblue;
+    }
+    60%{
+        background-color: darkblue;
+        color: white;
+    }
+    to{
+        background-color: chartreuse;
+        color:red;
+    }
+}
+.Page .calumns14:hover{
+    transition-duration: 0.4s;
+    transform : translate(-15px);
+    animation-name: main;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    box-shadow: 0 0 1em grey;
+}
+
+.Page .calumns5:hover{
+    transition-duration: 0.4s;
+    transform : translate(-10px);
+    animation-name:  photo;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    box-shadow: 0 0 1em grey;
+}
+.Page .calumns20:hover{
+    transition-duration: 0.4s;
+    transform : translate(10px);
+    animation-name: portfolio;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    box-shadow: 0 0 1em grey;
+}
+.Page .calumns39:hover{
+    transition-duration: 0.4s;
+    transform : translate(0, 5px);
+    animation-name: contacts;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    box-shadow: 0 0 1em grey;
+}
+@keyframes copleElements {
+    from{
+        background-color: gainsboro;
+    }
+    50%{
+        background-color: gainsboro;
+    }
+    to{
+        background-color: ghostwhite;
+    }
+}
+@keyframes copleElements2 {
+    from{
+        background-color: gainsboro;
+    }
+    50%{
+        background-color: lightgray;
+
+    }
+    to{
+        background-color:ghostwhite;
+    }
+}
+@keyframes copleElements3 {
+    from{
+        background-color: white;
+
+    }
+    50%{
+        background-color: gainsboro;
+    }
+
+    to{
+        background-color: lightgray;
+    }
+}
+.animation1 {
+    animation-name:  copleElements;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.animation2{
+    animation-name: copleElements2 ;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.animation3{
+    animation-name: copleElements3 ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}

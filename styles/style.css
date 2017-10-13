@@ -1,0 +1,48 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.Page{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    background-color: grey;
+
+}
+.Page > *{
+    border: 1px solid black;
+
+}
+.Page .calumns14{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 26px;
+    grid-area: 2/2/3/4;
+}
+.Page .calumns5{
+    grid-area: 1/5/4/6;
+}
+.Page .calumns39{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 26px;
+    grid-area: 4/7/5/9;
+}
+.Page .calumns20{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 26px;
+    grid-area: 2/9/3/11;
+}
+.Page .calumns5 span{
+    display: inline-block;
+    transform:  rotate(-90deg);
+    margin-top: 100%;
+    font-size: 26px;
+}
+
+
+
